@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    max-width:100%;
+    
+}
+/* -------------------footer------------------ */
+footer{
+    background-color: rgb(31, 29, 29);
+    padding:50px;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    width:100%;
+}
+.foo{
+    display:flex;
+    margin-left:100px;
+    margin-right: 100px;
+    padding:20px;
+    justify-content: space-between;
+}
+.ad{
+    padding-left: 20px;
+    padding-right:20px;
+    justify-content: space-between;
+    font-size: 17px;
+    
+}
+.nfoo{
+    margin-top:1.5%;
+    display:flex;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 3%;
+
+}
+.nfoo .flist h3{
+    margin-bottom:10%;
+    font-size:x-large;
+    color:rgb(255, 153, 0);
+}
+.nfoo .flist ul li{
+    margin-top: 2%;
+    font-size:larger;
+}
+.social a{
+    text-decoration: none;
+    color:white;
+    margin:20px;
+    font-size: 30px;
+    padding:10px;
+
+}
+footer p{
+    font-size: larger;
+}
+
+/* ----------start img---------- */
+.demo{
+    width:100%;
+    height:350px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    border:0.2px solid black;
+    align-items:center;
+    text-align:center;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+     
+   }
+
+   @keyframes slider{
+    
+    25%{
+        animation-delay:10s;
+        background-image:url(slider2.jpg);
+        animation-delay: 10s;
+    }
+    65%{
+        animation-delay:10s;
+        background-image:url(slider3.jpg);
+        animation-delay: 10s;
+    }
+}
+   
+   img{
+        position:center;
+   }
+
+/* -------------anchor tags in pages---------- */
+
+nav{
+    
+    position:sticky;
+    top:0;
+    margin-left:300px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+   justify-content:space-between; 
+   font-size: 25px;
+   
+   }
+
+   nav ul li{
+    list-style: none;
+    display:inline-block;
+    margin-left:60px;
+    
+
+}
+ul li a{ 
+    color:rgb(47, 0, 255);
+    font-size:0.8cm;
+    text-decoration:none;
+    border:1px solid black;
+    padding:5px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right,rgb(255, 136, 0),rgb(255, 255, 255));
+
+} 
+ul li a:hover{
+    color:rgb(47,0,255);
+    transform: scale(1.05);
+    -webkit-text-stroke:0.5px black;
+    font-size:1.05cm;
+}
+
+/* -----------------home setter-------------- */
+
+.home1{
+    margin:45px;
+    font-size:26px;
+
+}
+
+.home2{
+    margin-left:45px;
+    font-size: 29px;;
+}
+
+.qual{
+    margin:30px;
+    
+}
+.home1 h3{
+    font-size: 40px;
+    padding-bottom: 5px;
+    font-weight:bolder;
+    margin-bottom: 8px;
+    color:rgb(255, 0, 217);
+    margin-top: 20px;
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    text-decoration-color: deeppink;
+    
+
+}
+.qual img{
+    height:150px;
+    margin:14px;
+    border-radius: 10px;
+    
+}
+.qual .q1,.qual .q2{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height:180px;
+    width:1100px;
+    margin-left:5%;
+}
+.qual .q1 img,.qual .q2 img{
+    float:left;
+}
+.qual .q1 p,.qual .q2 p{
+    padding:15px;
+    font-size:25px;
+}
+.home1 img:hover{
+    transform: scale(1.05);
+}
+.h22 img:hover{
+    transform: scale(1.05);
+}
+
+/* ---------------services block start --------------- */
+.service1 iframe {
+    height:280px;
+    width:450px;
+    border-radius: 5px;
+    border:1px solid black;
+    box-shadow: rgb(42, 54, 67) 0px 20px 30px -10px;
+    
+}
+.service1 iframe:hover{
+    transform: scale(1.05);
+}
+.service1{
+    display:flex;
+    justify-content: space-between;
+    margin:40px;
+    padding:30px;
+    border:1.5px solid black;
+    background-color: white;
+}
+.service2 p{
+    margin:28px;
+
+}
+.service2 img:hover{
+    transform: scale(1.05);
+}
+/* ------------------contact block started------------------- */
+.cont{
+    margin:30px;
+}
+.cont p{
+    padding:10px;
+    font-size: 25px;
+}
+.cont img{
+    height:300px;
+    width:350px;
+    margin-right: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 4px;
+
+}
+/* -----------------------reviews block started----------------------- */
+.skill{
+    width: 250px;
+    height: 250px;
+    /* background-color: blue; */
+    position:relative;
+}
+.outer{
+    
+    height:250px;
+    width:250px;
+    /* border:1px solid red; */
+    border-radius: 50%;
+    padding:27px;
+    box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+.inner{
+    height: 195px;
+    width: 195px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid red; */
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7) , -0.5px -0.5px 0px rgba(255,255,255,1) , 0.5px 0.5px 0px rgba(255,255,255,1);
+
+
+}
+#number{
+    font-weight: 600;
+    font-size: 55px;
+    color:black;
+    
+}
+circle{
+    fill:none;
+    stroke:url(#GradientColor);
+    stroke-width: 28px;
+    stroke-dasharray: 700;
+    stroke-dashoffset:700;
+    animation: anim 1.8s linear forwards;
+    animation-delay: 0.5s;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:rotateZ(-60deg);
+
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 90;
+    }
+
+
+}
+.f{
+    height:24px;
+    width:0px;
+    background-color: gold;
+    border-radius:15px;
+    margin:10px;
+    animation-name: lin;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+@keyframes lin {
+    from{
+        width:0px;
+    }
+    to{
+        width:300px;
+    }
+    
+}
+.checked {
+    color: orange;
+  }
+
+input[type="submit"]{
+    border-radius: 10px;
+}
+input[type="submit"]:hover{
+    transform: scale(1.2);
+    background-color:rgb(223, 223, 252);
+}
+textarea:hover{
+    transform: scale(1.1);
+}
+.comments{
+    margin:20px;
+    padding:15px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.comments p{
+    padding:10px;
+    text-align: center;
+    border:1px solid black;
+    margin:25px;
+    height:180px;
+    width:660px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 244, 183);
+    font-size: larger;
+
+
+}
+.comments p:hover{
+    transform: scale(1.03);
+    background-color:rgb(255, 242, 254);
+    box-shadow: rgb(42, 54, 67) 0px 20px 30px -10px;;
+}
+.comments p img{
+    height:55px;
+    width:55px;
+    border-radius: 50px;
+    float: left;
+}
+
+/* -----------------online dummy setter------------- */
+.vega{
+    margin:30px;
+    margin-top:0px;
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.tables{
+    height:285px;
+    width:230px;
+    background-color: rgb(195, 255, 255);
+    margin:10px;
+    margin-bottom: 50px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+.tables:hover{
+    transform: scale(1.08);
+    box-shadow: rgb(42, 54, 67) 0px 20px 30px -10px;
+
+}
+.tables img{
+    height:190px;
+    width: 190px;
+    margin:15px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.tables button{
+    padding:10px;
+    margin:5px;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 7px;
+}
+.tables button:hover{
+    transform: scale(1.05);
+    background-color: lavender;
+}
+.tables p{
+    font-size: 30px;
+}
+

@@ -1,0 +1,160 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 231, 247);
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    width: 250px;
+    height: 250px;
+    /* background-color: blue; */
+    position:relative;
+}
+.outer{
+    
+    height:250px;
+    width:250px;
+    /* border:1px solid red; */
+    border-radius: 50%;
+    padding:27px;
+    box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+.inner{
+    height: 195px;
+    width: 195px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid red; */
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7) , -0.5px -0.5px 0px rgba(255,255,255,1) , 0.5px 0.5px 0px rgba(255,255,255,1);
+
+
+}
+#number{
+    font-weight: 600;
+    font-size: xx-large;
+    color:black;
+    
+}
+circle{
+    fill:none;
+    stroke:url(#GradientColor);
+    stroke-width: 28px;
+    stroke-dasharray: 700;
+    stroke-dashoffset:700;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:rotateZ(-60deg);
+
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 90;
+    }
+
+
+}
+.f{
+    height:10px;
+    width:220px;
+    background-color: blue;
+    border-radius:15px;
+    transition: 2s;
+}
+.comments{
+    margin:20px;
+    padding:15px;
+    border:1px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.comments p{
+    padding:10px;
+    text-align: center;
+    border:1px solid black;
+    margin:25px;
+    height:170px;
+    width:620px;
+    padding-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(244, 244, 236);
+    font-size: larger;
+
+
+}
+.comments p:hover{
+    transform: scale(1.03);
+    background-color: rgb(253, 236, 253);
+    box-shadow: rgb(42, 54, 67) 0px 20px 30px -10px;;
+}
+
+.sand{
+    height:400px;
+    width:700px;
+    background-image:url(rev1.jpg);
+    margin:30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+}
+@keyframes slider{
+    
+    25%{
+        animation-delay:10s;
+        background-image:url(rev2.jpg);
+        animation-delay: 10s;
+    }
+    65%{
+        animation-delay:10s;
+        background-image:url(rev3.jpg);
+        animation-delay: 10s;
+    }
+    
+/* }
+body{
+    margin: 30px;
+    padding:10px;
+    background-color:grey;
+    align-items:center;
+} 
+
+.hero {
+    align-items:center;
+    text-align:center;
+    color:red;
+
+}
+.ad{
+    height:100px;
+    width:100px;
+    background-color: blue;
+}
+.d{
+    margin:10px;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid black;
+    position:sticky;
+    top:0;
+}
+  */
